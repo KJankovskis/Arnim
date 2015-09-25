@@ -8,32 +8,36 @@ margin:50px auto;
 font-family:Verdana, Geneva, sans-serif;
 }
 span {
-color:red
+color:red;
+}
+h1{
+text-align: center;
+font-size: 18px;
 }
 h2 {
 background-color:#FEFFED;
 text-align:center;
 border-radius:10px 10px 0 0;
 margin:-10px -40px;
-padding:15px
+padding:15px;
 }
 hr {
 border:0;
 border-bottom:1px solid #ccc;
 margin:10px -40px;
-margin-bottom:30px
+margin-bottom:30px;
 }
 #login {
 width:300px;
-float:left;
 border-radius:10px;
 font-family:Verdana, Geneva, sans-serif;
 border:2px solid #ccc;
-padding:10px 40px 25px;
-margin-top:70px
+padding:10px 40px 25px;    
+margin: auto;
+margin-top:  20px;
 }
 input[type=text],input[type=password] {
-width:99.5%;
+width:60%;
 padding:10px;
 margin-top:8px;
 border:1px solid #ccc;
@@ -50,23 +54,100 @@ padding:10px;
 font-size:20px;
 cursor:pointer;
 border-radius:5px;
-margin-bottom:15px
+    margin-top: 10px;
+margin-bottom:8px;
 }
-#profile {
-padding:50px;
-border:1px dashed grey;
-font-size:20px;
-background-color:#DCE6F7
+/*********PROFILA LAPAAAAAAAA*********/
+.wrap {
+    position:relative;
+	width:990px;
+	margin-left:auto;
+	margin-right:auto;
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+/*********HEADER*********/
+.header {
+    width:auto;
+    height:75px;
+    border:1px solid grey;
+    font-size:20px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color:#DCE6F7;
 }
 #logout {
-float:right;
-padding:5px;
-border:dashed 1px gray
+    float:right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+#user-page{
+    float: right;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+#logo{
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+/*********CONETNT*********/
+.content {
+    width:auto;
+    position:relative;
+    background-color: #DCE6F7;
+    height: 200px;
+    border:1px solid grey;
+}
+.content-left{
+    position: relative;
+    margin-top: 10px;
+	margin-left: 10px;
+    height: 180px;
+    background-color: aqua;
+    float: left;
+    width: 550px;
+}
+.content-right{
+    position: relative;
+    margin-top: 10px;
+	margin-right: 10px;
+    height: 180px;
+    background-color: aqua;
+    float: right;
+    width: 410px;
+}
+.search{
+    width:auto;
+    position:relative;
+    background-color: #DCE6F7;
+    height: 150px;
+    border:1px solid grey; 
+}
+.search-left{
+    position: relative;
+    margin-top: 10px;
+	margin-left: 10px;
+    height: 130px;
+    background-color: aqua;
+    float: left;
+    width: 550px;
+}
+.search-right{
+    position: relative;
+    margin-top: 10px;
+	margin-right: 10px;
+    height: 130px;
+    background-color: aqua;
+    float: right;
+    width: 410px;
 }
 a {
 text-decoration:none;
-color:#6495ed
+color:#6495ed;
 }
 i {
-color:#6495ed
+color:#6495ed;
 }
