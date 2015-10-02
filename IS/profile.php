@@ -1,36 +1,34 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Your Home Page</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div class="wrap">
-        <div class="header">
-            <b id="logo"><a href="logo"><img src="atteli/logo.png" alt="logo" height="50" width="250"></a></b>
-            <b id="logout"><a href="logout.php"><img src="atteli/logout.png" alt="logout-icon" height="24" width="24"></a></b>
-            <b id="user-page"><a href="user-page"><img src="atteli/user.png" alt="user-icon" height="24" width="24"></a></b>
-        </div>
+        <?php include('header.php'); ?>
         <div class="content">
             <div class="content-left">
-            
+                <div class="newUser">
+                    <p>PIEVIENOT JAUNU LIETOTAJU</p>
+                </div>
+                <div class="newCourse">
+                    <p>PIEVIENOT JAUNU KURSU</p>
+                </div>
+                <div class="newRoom">
+                    <p>PIEVIENOT JAUNU AUDITORIJU</p>
+                </div>
             </div>
             <div class="content-right">
-            
+                <div class="groups">
+                    <p>MACIBU<br><br> GRUPU<br><br> PLANOSANA</p>
+                </div>
             </div>
         </div> 
-        <div class="search">
+        <div class="searchArray">
             <div class="search-left">
         
             </div>
             <div class="search-right">
-        
+                <form>
+                    <input type="text" placeholder="Search..." required>
+                    <input type="button" value="Search">
+                </form>
             </div>
         </div>
-        <div class="footer">
-       
-        </div> 
-    </div>
-</body>
-</html>
+        <div class="founded">
+        
+        </div>
+        <?php include('footer.php'); ?>

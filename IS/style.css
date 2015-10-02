@@ -37,7 +37,7 @@ margin: auto;
 margin-top:  20px;
 }
 input[type=text],input[type=password] {
-width:60%;
+width:200px;
 padding:10px;
 margin-top:8px;
 border:1px solid #ccc;
@@ -46,7 +46,7 @@ font-size:16px;
 font-family:Verdana, Geneva, sans-serif;
 }
 input[type=submit] {
-width:100%;
+width:300px;
 background-color:#FFBC00;
 color:#fff;
 border:2px solid #FFCB00;
@@ -64,6 +64,7 @@ margin-bottom:8px;
 	margin-left:auto;
 	margin-right:auto;
 	min-height: 100%;
+    font-family:Verdana, Geneva, sans-serif;
     height: auto !important;
     height: 100%;
     margin: 0 auto -4em;
@@ -93,57 +94,18 @@ margin-bottom:8px;
     margin-top: 10px;
     margin-left: 50px;
 }
-/*********CONETNT*********/
-.content {
+
+/*********FOOTER*********/
+.footer{
     width:auto;
-    position:relative;
-    background-color: #DCE6F7;
-    height: 200px;
+    height:25px;
     border:1px solid grey;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color:#DCE6F7; 
 }
-.content-left{
-    position: relative;
-    margin-top: 10px;
-	margin-left: 10px;
-    height: 180px;
-    background-color: aqua;
-    float: left;
-    width: 550px;
-}
-.content-right{
-    position: relative;
-    margin-top: 10px;
-	margin-right: 10px;
-    height: 180px;
-    background-color: aqua;
-    float: right;
-    width: 410px;
-}
-.search{
-    width:auto;
-    position:relative;
-    background-color: #DCE6F7;
-    height: 150px;
-    border:1px solid grey; 
-}
-.search-left{
-    position: relative;
-    margin-top: 10px;
-	margin-left: 10px;
-    height: 130px;
-    background-color: aqua;
-    float: left;
-    width: 550px;
-}
-.search-right{
-    position: relative;
-    margin-top: 10px;
-	margin-right: 10px;
-    height: 130px;
-    background-color: aqua;
-    float: right;
-    width: 410px;
-}
+
+
 a {
 text-decoration:none;
 color:#6495ed;
@@ -151,3 +113,5 @@ color:#6495ed;
 i {
 color:#6495ed;
 }
+
+

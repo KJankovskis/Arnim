@@ -19,7 +19,7 @@ header("location: profile.php");
             <form action="" method="post">
             <label>UserName :</label>
             <input id="name" name="username" placeholder="username" type="text"><br>
-            <label >Password :</label><br>
+            <label>Password :</label><br>
             <input id="password" name="password" placeholder="**********" type="password">
             <input name="submit" type="submit" value=" Login ">
             <span><?php echo $error; ?></span>
