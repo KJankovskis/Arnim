@@ -17,7 +17,7 @@
     width:auto;
     background-color: #DCE6F7;
     font-family: Arial, Helvetica, sans-serif;
-    height: 200px;
+    height: 250px;
     border:1px solid grey;
     
 }
@@ -28,13 +28,27 @@
     font-size: 17px;
 }
 .profilePicture{
-    width:105px;
-    height: 135px;
+    width:200px;
+    height: 230px;
     position:relative;
     float:right;
-    background-color: black;
     margin-top: 10px;
-    margin-right: 120px; 
+    margin-right: 70px; 
+}
+.noslogojums{
+    width:auto;
+    position:relative;
+    background-color: #DCE6F7;
+    font-family:Verdana, Geneva, sans-serif;
+    height: 30px;
+    border:1px solid grey;
+}
+.noslogojums p{
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;     
 }
 .about{
     width:auto;
@@ -43,11 +57,4 @@
     font-family:Verdana, Geneva, sans-serif;
     height: 200px;
     border:1px solid grey;
-}
-.about p{
-    text-align: left;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 20px;
-    font-weight: bold;     
 }

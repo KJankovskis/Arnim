@@ -12,9 +12,11 @@
                 $surname = $rows['uzvards'];
                 $mail = $rows['epasts'];
                 $phone = $rows['talrunis'];
-                $adress = $rows['adrese'];
-                $city = $rows['pilseta']; 
-                $workplace = $rows['darbaVieta'];
+                $city = $rows['dzivesPilseta']; 
+                $adress = $rows['dzivesAdrese'];
+                $cityWork = $rows['darbaPilseta']; 
+                $workplaceAdress = $rows['darbaAdrese'];
+                $foto = $rows['foto'];
                 $role = $rows['lietotajaLoma'];
             }
         }
@@ -24,25 +26,34 @@
         <p ><?php echo "$name $surname"; ?> </p>
     </div>
     <div class="person">
-        <div class="profilePicture"></div>
+        <div class="profilePicture">
+            <?php
+echo '<dd>'
+     . '<img src="data:image/jpeg;base64,' . base64_encode($foto) . '" width="200" height="230">'
+     . '</dd>';
+?>
+        </div>
         <p><?php echo "<b>e-pasts</b> :  $mail" ?></p>
         <p><?php echo "<b>tālrunis</b> : $phone" ?></p>
         <p><?php echo "<b>dzīvesvietas adrese</b> : $adress , $city" ?></p>
-        <p><?php echo "<b>darbavieta</b> : $workplace" ?></p>
+        <p><?php echo "<b>darbavieta</b> : $workplaceAdress, $cityWork" ?></p>
         <p><?php
-            if($role == 0){             //lietotajs
-                echo "<b>apgūtie kursi</b> : <br>";
-                echo "<b>iegūtie diplomi</b> : <br>";
-                echo "<b>iegūtie sertifikāti</b> : <br>";
+            if($role == 'L'){             //lietotajs
+                echo "<b>apgūtie kursi</b> : <br><br>";
+                echo "<b>iegūtie diplomi</b> : <br><br>";
+                echo "<b>iegūtie sertifikāti</b> : <br><br>";
             }
-            else if($role == 1){        //pasniedzejs
+            else if($role == 'P'){        //pasniedzejs
                 echo "<b>pasniedzamie kursi</b> :";
+            }
+            else if($role == 'A'){
+                echo "<b>TU ESI ADMINISTRATORS</b>";   
             }
         ?></p>      
     </div>
-    
+    <div class="noslogojums"><p>Noslogojums</p></div>
     <div class="about">
-        <p>Noslogojums</p>
+        
 
     </div>
    

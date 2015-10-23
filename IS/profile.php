@@ -1,15 +1,11 @@
         <?php include('header.php'); ?>
         <div class="content">
+<!--            <div class="content-top"></div>-->
             <div class="content-left">
-                <div class="newUser">
-                    <p>PIEVIENOT JAUNU LIETOTAJU</p>
-                </div>
-                <div class="newCourse">
-                    <p>PIEVIENOT JAUNU KURSU</p>
-                </div>
-                <div class="newRoom">
-                    <p>PIEVIENOT JAUNU AUDITORIJU</p>
-                </div>
+                <input class="newUser" name="newUser" type="button" value="PIEVIENOT JAUNU LIETOTAJU" onclick="window.open('newUser.php', '_self')"/>
+                <input class="newCourse" name="newCourse" type="button" value="PIEVIENOT JAUNU KURSU" onclick="window.open('newCourse.php', '_self')"/>
+                <input class="newRoom" name="newRoom" type="button" value="PIEVIENOT JAUNU AUDITORIJU" onclick="window.open('newRoom.php', '_self')"/>
+                
             </div>
             <div class="content-right">
                 <div class="groups">
@@ -29,6 +25,6 @@
             </div>
         </div>
         <div class="founded">
-        
+    
         </div>
         <?php include('footer.php'); ?>
